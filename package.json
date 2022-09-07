@@ -1,0 +1,15 @@
+{
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "sirv-cli": "^2.0.2"
+  }
+}

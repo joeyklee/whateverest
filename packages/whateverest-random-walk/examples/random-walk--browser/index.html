@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>demo</title>
+</head>
+
+<body>
+  <h1>hello</h1>
+  <main id="main">
+  </main>
+</body>
+<script src="../../dist/randomWalk.min.js"></script>
+<script>
+  const randomSteps = randomWalk(100).map(location => ({
+    x: Math.round(location.x * 300),
+    y: Math.round(location.y * 300),
+  }));
+
+  const line = `<path
+  stroke="red"
+  stroke-width="3"
+  fill="none"
+  d="M0 0 ${randomSteps.map(item => `L${item.x} ${item.y}`).join(' ')} Z"/>`
+
+  document.querySelector('#main').innerHTML = `
+  <svg width="300" height="300">
+    ${line}
+  </svg>`;
+</script>
+
+</html>

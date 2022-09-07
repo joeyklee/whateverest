@@ -1,0 +1,22 @@
+{
+  "name": "@whateverest/whateverest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/whateverest.js",
+  "module": "dist/whateverest.esm.js",
+  "scripts": {
+    "build": "rollup -c",
+    "build:watch": "rollup -c -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^14.0.0"
+  },
+  "dependencies": {
+    "@whateverest/random-walk": "1.0.0",
+    "@whateverest/vector": "1.0.0"
+  }
+}
