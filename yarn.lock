@@ -97,6 +97,42 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@joeyklee/whateverest-random-walk@npm:^0.0.10, @joeyklee/whateverest-random-walk@workspace:packages/whateverest-random-walk":
+  version: 0.0.0-use.local
+  resolution: "@joeyklee/whateverest-random-walk@workspace:packages/whateverest-random-walk"
+  dependencies:
+    "@rollup/plugin-node-resolve": "npm:^16.0.0"
+    "@rollup/plugin-terser": "npm:^0.4.4"
+    "@rollup/plugin-typescript": "npm:^12.1.2"
+    rollup: "npm:^4.34.2"
+    tslib: "npm:^2.4.0"
+    typescript: "npm:^5.7.3"
+  languageName: unknown
+  linkType: soft
+
+"@joeyklee/whateverest-vector@npm:^0.0.10, @joeyklee/whateverest-vector@workspace:packages/whateverest-vector":
+  version: 0.0.0-use.local
+  resolution: "@joeyklee/whateverest-vector@workspace:packages/whateverest-vector"
+  dependencies:
+    "@rollup/plugin-typescript": "npm:^12.1.2"
+    rollup: "npm:^4.34.2"
+    tslib: "npm:^2.8.1"
+    typescript: "npm:^5.7.3"
+  languageName: unknown
+  linkType: soft
+
+"@joeyklee/whateverest@workspace:packages/whateverest":
+  version: 0.0.0-use.local
+  resolution: "@joeyklee/whateverest@workspace:packages/whateverest"
+  dependencies:
+    "@joeyklee/whateverest-random-walk": "npm:^0.0.10"
+    "@joeyklee/whateverest-vector": "npm:^0.0.10"
+    "@rollup/plugin-commonjs": "npm:^28.0.2"
+    "@rollup/plugin-node-resolve": "npm:^16.0.0"
+    rollup: "npm:^4.34.2"
+  languageName: unknown
+  linkType: soft
+
 "@jridgewell/gen-mapping@npm:^0.3.5":
   version: 0.3.8
   resolution: "@jridgewell/gen-mapping@npm:0.3.8"
@@ -1093,42 +1129,6 @@ __metadata:
   checksum: 10c0/c5b7e1770feb5ccfb6802f6ad82a7b0d50874c99331e0c9b259e415e55a38d7a86ad0901c57665d93f75938be2a6a0bc9aa06c9749192cadb2e4512800bbc6e6
   languageName: node
   linkType: hard
-
-"@whateverest/random-walk@npm:^0.0.10, @whateverest/random-walk@workspace:packages/whateverest-random-walk":
-  version: 0.0.0-use.local
-  resolution: "@whateverest/random-walk@workspace:packages/whateverest-random-walk"
-  dependencies:
-    "@rollup/plugin-node-resolve": "npm:^16.0.0"
-    "@rollup/plugin-terser": "npm:^0.4.4"
-    "@rollup/plugin-typescript": "npm:^12.1.2"
-    rollup: "npm:^4.34.2"
-    tslib: "npm:^2.4.0"
-    typescript: "npm:^5.7.3"
-  languageName: unknown
-  linkType: soft
-
-"@whateverest/vector@npm:^0.0.10, @whateverest/vector@workspace:packages/whateverest-vector":
-  version: 0.0.0-use.local
-  resolution: "@whateverest/vector@workspace:packages/whateverest-vector"
-  dependencies:
-    "@rollup/plugin-typescript": "npm:^12.1.2"
-    rollup: "npm:^4.34.2"
-    tslib: "npm:^2.8.1"
-    typescript: "npm:^5.7.3"
-  languageName: unknown
-  linkType: soft
-
-"@whateverest/whateverest@workspace:packages/whateverest":
-  version: 0.0.0-use.local
-  resolution: "@whateverest/whateverest@workspace:packages/whateverest"
-  dependencies:
-    "@rollup/plugin-commonjs": "npm:^28.0.2"
-    "@rollup/plugin-node-resolve": "npm:^16.0.0"
-    "@whateverest/random-walk": "npm:^0.0.10"
-    "@whateverest/vector": "npm:^0.0.10"
-    rollup: "npm:^4.34.2"
-  languageName: unknown
-  linkType: soft
 
 "@yarnpkg/lockfile@npm:^1.1.0":
   version: 1.1.0

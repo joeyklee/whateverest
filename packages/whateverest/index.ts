@@ -1,2 +1,2 @@
-export { default as randomWalk } from "@whateverest/random-walk/dist/whateverest-random-walk";
-export { default as vector } from "@whateverest/vector/dist/whateverest-vector";
+export { default as randomWalk } from "@joeyklee/whateverest-random-walk/dist/whateverest-random-walk";
+export { default as vector } from "@joeyklee/whateverest-vector/dist/whateverest-vector";
