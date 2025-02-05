@@ -1,6 +1,6 @@
 {
   "name": "@whateverest/whateverest",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "type": "module",
   "main": "dist/whateverest.js",
@@ -18,8 +18,8 @@
     "rollup": "^4.34.2"
   },
   "dependencies": {
-    "@whateverest/random-walk": "^0.0.4",
-    "@whateverest/vector": "^0.0.4"
+    "@whateverest/random-walk": "^0.0.5",
+    "@whateverest/vector": "^0.0.5"
   },
   "gitHead": "1294bc9af2d70d0883b129beee75fc8a80a04d34"
 }
