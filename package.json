@@ -1,21 +1,22 @@
 {
   "scripts": {
     "serve": "sirv",
-    "build": "yarn workspaces run build"
+    "build": "yarn workspaces foreach -A run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "private": false,
   "workspaces": {
     "packages": [
       "packages/*"
     ]
   },
   "devDependencies": {
+    "rollup": "^4.34.2",
     "sirv-cli": "^3.0.0"
   },
   "dependencies": {
     "lerna": "^8.1.9"
-  }
+  },
+  "packageManager": "yarn@4.6.0"
 }

@@ -13,7 +13,7 @@ yarn install
 Build all:
 
 ```sh
-yarn workspaces run build
+yarn workspaces foreach run build
 # yarn build
 ```
 
