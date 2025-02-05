@@ -4,11 +4,29 @@ A monorepo of ideas. Mostly random tools and packages and whatever. Whateverest 
 
 ## Developer notes
 
+install all deps
+
+```sh
+yarn install
+```
+
 Build all:
 
 ```sh
 yarn workspaces run build
 # yarn build
+```
+
+bump the lerna version
+
+```sh
+npx lerna version
+```
+
+publish
+
+```sh
+npx lerna publish
 ```
 
 Run the local server:

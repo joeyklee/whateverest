@@ -1,6 +1,6 @@
 {
   "name": "@whateverest/vector",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "dist/whateverest-vector.js",
   "module": "dist/whateverest-vector.esm.js",
   "type": "module",
