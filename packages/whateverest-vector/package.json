@@ -14,5 +14,6 @@
   "scripts": {
     "build": "rollup -c",
     "build:watch": "rollup -c -w"
-  }
+  },
+  "gitHead": "1294bc9af2d70d0883b129beee75fc8a80a04d34"
 }

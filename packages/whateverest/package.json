@@ -19,5 +19,6 @@
   "dependencies": {
     "@whateverest/random-walk": "1.0.0",
     "@whateverest/vector": "1.0.0"
-  }
+  },
+  "gitHead": "1294bc9af2d70d0883b129beee75fc8a80a04d34"
 }
