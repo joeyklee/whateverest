@@ -11,9 +11,7 @@
       "packages/*"
     ]
   },
-  "publishConfig": {
-    "access": "public"
-  },
+  "private": true,
   "devDependencies": {
     "rollup": "^4.34.2",
     "sirv-cli": "^3.0.0"

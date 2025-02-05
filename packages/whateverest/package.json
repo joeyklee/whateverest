@@ -5,6 +5,10 @@
   "type": "module",
   "main": "dist/whateverest.js",
   "module": "dist/whateverest.esm.js",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "build": "rollup -c",
     "build:watch": "rollup -c -w"
@@ -21,5 +25,5 @@
     "@whateverest/random-walk": "^0.0.7",
     "@whateverest/vector": "^0.0.7"
   },
-  "gitHead": "d662c21e98ee07ff066f14e93308286264156507"
+  "gitHead": "6bd92eb95b488ccb833722aefad8c1d12057c064"
 }
