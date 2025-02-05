@@ -1,3 +1,3 @@
-const whateverest = require("@whateverest/whateverest");
+import whateverest from "../dist/whateverest.esm.js";
 
 console.log(whateverest);

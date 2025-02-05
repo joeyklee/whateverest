@@ -2,6 +2,7 @@
   "name": "@whateverest/whateverest",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "dist/whateverest.js",
   "module": "dist/whateverest.esm.js",
   "scripts": {
@@ -12,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-node-resolve": "^14.0.0"
   },
   "dependencies": {
