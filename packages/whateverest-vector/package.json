@@ -19,5 +19,5 @@
     "build": "rollup -c",
     "build:watch": "rollup -c -w"
   },
-  "gitHead": "7c3c9f4d57049a34d3ba637029158f5be7a5cf47"
+  "gitHead": "c799832707c89b1af8580d7db5b4e67e1cfeaf8a"
 }

@@ -3,3 +3,4 @@ node_modules
 packages/*/dist
 NOTES.md
 .yarn/install-state.gz
+.npmrc
