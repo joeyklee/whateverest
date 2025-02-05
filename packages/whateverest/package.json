@@ -22,8 +22,8 @@
     "rollup": "^4.34.2"
   },
   "dependencies": {
-    "@whateverest/random-walk": "^0.0.10",
-    "@whateverest/vector": "^0.0.10"
+    "@joeyklee/whateverest-random-walk": "^0.0.10",
+    "@joeyklee/whateverest-vector": "^0.0.10"
   },
   "gitHead": "27254e9e454c9bff9495d251373d0929cf814683"
 }
