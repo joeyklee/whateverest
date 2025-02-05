@@ -17,8 +17,8 @@
     "@rollup/plugin-node-resolve": "^14.0.0"
   },
   "dependencies": {
-    "@whateverest/random-walk": "1.0.0",
-    "@whateverest/vector": "1.0.0"
+    "@whateverest/random-walk": "0.0.1",
+    "@whateverest/vector": "0.0.1"
   },
   "gitHead": "1294bc9af2d70d0883b129beee75fc8a80a04d34"
 }
