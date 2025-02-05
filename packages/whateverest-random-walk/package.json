@@ -1,5 +1,5 @@
 {
-  "name": "@whateverest/random-walk",
+  "name": "@joeyklee/whateverest-random-walk",
   "version": "0.0.10",
   "description": "",
   "main": "dist/whateverest-random-walk.js",
@@ -25,5 +25,5 @@
     "tslib": "^2.4.0",
     "typescript": "^5.7.3"
   },
-  "gitHead": "c799832707c89b1af8580d7db5b4e67e1cfeaf8a"
+  "gitHead": "27254e9e454c9bff9495d251373d0929cf814683"
 }

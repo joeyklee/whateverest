@@ -1,5 +1,5 @@
 {
-  "name": "@whateverest/whateverest",
+  "name": "@joeyklee/whateverest",
   "version": "0.0.10",
   "description": "",
   "type": "module",
@@ -25,5 +25,5 @@
     "@whateverest/random-walk": "^0.0.10",
     "@whateverest/vector": "^0.0.10"
   },
-  "gitHead": "c799832707c89b1af8580d7db5b4e67e1cfeaf8a"
+  "gitHead": "27254e9e454c9bff9495d251373d0929cf814683"
 }

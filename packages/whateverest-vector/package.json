@@ -1,5 +1,5 @@
 {
-  "name": "@whateverest/vector",
+  "name": "@joeyklee/whateverest-vector",
   "version": "0.0.10",
   "main": "dist/whateverest-vector.js",
   "module": "dist/whateverest-vector.esm.js",
@@ -19,5 +19,5 @@
     "build": "rollup -c",
     "build:watch": "rollup -c -w"
   },
-  "gitHead": "c799832707c89b1af8580d7db5b4e67e1cfeaf8a"
+  "gitHead": "27254e9e454c9bff9495d251373d0929cf814683"
 }
