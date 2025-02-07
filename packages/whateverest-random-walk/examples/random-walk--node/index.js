@@ -1,3 +1,3 @@
-import randomWalk from "../../dist/randomWalk.esm.js";
+import randomWalk from "../../dist/randomWalk.mjs";
 
 console.log(randomWalk(2));

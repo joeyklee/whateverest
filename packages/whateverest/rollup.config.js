@@ -22,9 +22,9 @@ function config({ plugins = [], output = {} }) {
 export default [
   config({
     output: {
-      format: "umd",
+      format: "cjs",
       name: "whateverest",
-      file: "dist/whateverest.js",
+      file: "dist/whateverest.cjs",
     },
   }),
   config({
@@ -32,11 +32,11 @@ export default [
     output: {
       format: "umd",
       name: "whateverest",
-      file: "dist/whateverest.min.js",
+      file: "dist/whateverest.umd.js",
     },
   }),
   config({
     plugins: [terser()],
-    output: { format: "es", file: "dist/whateverest.esm.js" },
+    output: { format: "es", file: "dist/whateverest.mjs" },
   }),
 ];

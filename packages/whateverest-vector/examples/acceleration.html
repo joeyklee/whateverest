@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demo-vector</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>demo-vector</title>
-</head>
+  <body>
+    <main class="main">
+      <svg id="viz" width="300" height="300"></svg>
+    </main>
+  </body>
+  <script src="../dist/whateverest-vector.umd.js"></script>
+  <script>
+    const $viz = document.querySelector("#viz");
+    let mover = vector({ x: 150, y: 150 });
+    let acceleration = vector({ x: -0.001, y: -0.001 });
+    let velocity = vector({ x: 0, y: 0 });
 
-<body>
-  <main class="main">
-    <svg id="viz" width="300" height="300">
-    </svg>
-  </main>
-</body>
-<script src="../dist/whateverest-vector.min.js"></script>
-<script>
-  const $viz = document.querySelector('#viz');
-  let mover = vector({ x: 150, y: 150 });
-  let acceleration = vector({ x: -0.001, y: -0.001 });
-  let velocity = vector({ x: 0, y: 0 });
+    const circle = document.createElementNS(
+      "http://www.w3.org/2000/svg",
+      "circle"
+    );
+    circle.setAttribute("cx", mover.location.x);
+    circle.setAttribute("cy", mover.location.y);
+    circle.setAttribute("r", 20);
 
-  const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-  circle.setAttribute('cx', mover.location.x);
-  circle.setAttribute('cy', mover.location.y);
-  circle.setAttribute('r', 20);
+    $viz.appendChild(circle);
 
-  $viz.appendChild(circle);
+    setInterval(() => {
+      acceleration = vector({
+        x: Math.random() < 0.5 ? Math.random() * -1 : Math.random(),
+        y: Math.random() < 0.5 ? Math.random() * -1 : Math.random(),
+      });
+      velocity = velocity.add(velocity, acceleration);
+      velocity = velocity.limit(velocity, 2);
+      mover = mover.add(mover, velocity);
 
-  setInterval(() => {
-    acceleration = vector({
-      x: Math.random() < 0.5 ? Math.random() * -1 : Math.random(),
-      y: Math.random() < 0.5 ? Math.random() * -1 : Math.random()
-    });
-    velocity = velocity.add(velocity, acceleration);
-    velocity = velocity.limit(velocity, 2);
-    mover = mover.add(mover, velocity);
-
-    circle.setAttribute('cx', mover.location.x)
-    circle.setAttribute('cy', mover.location.y)
-    circle.setAttribute('r', 30)
-  }, 30)
-
-</script>
-
+      circle.setAttribute("cx", mover.location.x);
+      circle.setAttribute("cy", mover.location.y);
+      circle.setAttribute("r", 30);
+    }, 30);
+  </script>
 </html>
