@@ -1,6 +1,6 @@
 {
   "name": "@joeyklee/whateverest",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "",
   "type": "module",
   "main": "dist/whateverest.cjs",
@@ -31,8 +31,8 @@
     "rollup": "^4.34.2"
   },
   "dependencies": {
-    "@joeyklee/whateverest-random-walk": "^0.0.11",
-    "@joeyklee/whateverest-vector": "^0.0.11"
+    "@joeyklee/whateverest-random-walk": "^0.0.12",
+    "@joeyklee/whateverest-vector": "^0.0.12"
   },
   "gitHead": "27254e9e454c9bff9495d251373d0929cf814683"
 }

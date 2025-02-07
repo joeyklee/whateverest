@@ -97,7 +97,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@joeyklee/whateverest-random-walk@npm:^0.0.11, @joeyklee/whateverest-random-walk@workspace:packages/whateverest-random-walk":
+"@joeyklee/whateverest-random-walk@npm:^0.0.12, @joeyklee/whateverest-random-walk@workspace:packages/whateverest-random-walk":
   version: 0.0.0-use.local
   resolution: "@joeyklee/whateverest-random-walk@workspace:packages/whateverest-random-walk"
   dependencies:
@@ -110,7 +110,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@joeyklee/whateverest-vector@npm:^0.0.11, @joeyklee/whateverest-vector@workspace:packages/whateverest-vector":
+"@joeyklee/whateverest-vector@npm:^0.0.12, @joeyklee/whateverest-vector@workspace:packages/whateverest-vector":
   version: 0.0.0-use.local
   resolution: "@joeyklee/whateverest-vector@workspace:packages/whateverest-vector"
   dependencies:
@@ -125,8 +125,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@joeyklee/whateverest@workspace:packages/whateverest"
   dependencies:
-    "@joeyklee/whateverest-random-walk": "npm:^0.0.11"
-    "@joeyklee/whateverest-vector": "npm:^0.0.11"
+    "@joeyklee/whateverest-random-walk": "npm:^0.0.12"
+    "@joeyklee/whateverest-vector": "npm:^0.0.12"
     "@rollup/plugin-commonjs": "npm:^28.0.2"
     "@rollup/plugin-node-resolve": "npm:^16.0.0"
     rollup: "npm:^4.34.2"
