@@ -3,14 +3,22 @@
   "version": "0.0.11",
   "description": "",
   "main": "dist/whateverest-random-walk.js",
-  "module": "dist/whateverest-random-walk.esm.js",
+  "module": "dist/whateverest-random-walk.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/whateverest-random-walk.js",
+      "import": "./dist/whateverest-random-walk.mjs",
+      "default": "./dist/whateverest-random-walk.umd.js"
+    }
+  },
   "type": "module",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "build": "rollup --config",
+    "prebuild": "rimraf dist",
+    "build": "npm run prebuild && rollup -c",
     "build:watch": "rollup -c -w",
     "examples:browser": "sirv"
   },

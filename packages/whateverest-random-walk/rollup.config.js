@@ -4,6 +4,7 @@
  */
 
 // rollup.config.js
+// @ts-check
 import typescript from "@rollup/plugin-typescript";
 import terser from "@rollup/plugin-terser";
 import resolve from "@rollup/plugin-node-resolve";
@@ -21,9 +22,9 @@ function config({ plugins = [], output = {} }) {
 export default [
   config({
     output: {
-      format: "umd",
+      format: "cjs",
       name: "randomWalk",
-      file: "dist/whateverest-random-walk.js",
+      file: "dist/whateverest-random-walk.cjs",
     },
   }),
   config({
@@ -31,11 +32,11 @@ export default [
     output: {
       format: "umd",
       name: "randomWalk",
-      file: "dist/whateverest-random-walk.min.js",
+      file: "dist/whateverest-random-walk.umd.js",
     },
   }),
   config({
     plugins: [terser()],
-    output: { format: "es", file: "dist/whateverest-random-walk.esm.js" },
+    output: { format: "es", file: "dist/whateverest-random-walk.mjs" },
   }),
 ];

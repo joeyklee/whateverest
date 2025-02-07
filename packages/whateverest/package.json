@@ -3,15 +3,24 @@
   "version": "0.0.11",
   "description": "",
   "type": "module",
-  "main": "dist/whateverest.js",
-  "module": "dist/whateverest.esm.js",
+  "main": "dist/whateverest.cjs",
+  "module": "dist/whateverest.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/whateverest.cjs",
+      "import": "./dist/whateverest.mjs",
+      "default": "./dist/whateverest.umd.js"
+    }
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "build": "rollup -c",
-    "build:watch": "rollup -c -w"
+    "prebuild": "rimraf dist",
+    "build": "npm run prebuild && rollup -c",
+    "build:watch": "rollup -c -w",
+    "examples:browser": "sirv"
   },
   "keywords": [],
   "author": "",
