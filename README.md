@@ -44,5 +44,5 @@ check out some of the demos
 Checking for outdated packages
 
 ```sh
-npx npm-check
+
 ```
