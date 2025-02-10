@@ -4,17 +4,18 @@ A monorepo of ideas. Mostly random tools and packages and whatever. Whateverest 
 
 ## Developer notes
 
-install all deps
+While in the root...
+
+### Install all deps
 
 ```sh
-yarn install
+npm install
 ```
 
-Build all:
+### Build all:
 
 ```sh
-yarn workspaces foreach run build
-# yarn build
+npm run build
 ```
 
 bump the lerna version
@@ -23,16 +24,16 @@ bump the lerna version
 npx lerna version
 ```
 
-publish
+### publish
 
 ```sh
 npx lerna publish
 ```
 
-Run the local server:
+### Run the local server:
 
 ```sh
-yarn serve
+npm run serve
 ```
 
 check out some of the demos
@@ -40,8 +41,8 @@ check out some of the demos
 - http://localhost:8080/packages/whateverest-random-walk/examples/random-walk--browser/index.html
 - http://localhost:8080/packages/whateverest-vector/examples/acceleration.html
 
-Upgrading dev dependencies
+Checking for outdated packages
 
 ```sh
-yarn upgrade-interactive --latest
+npx npm-check
 ```
