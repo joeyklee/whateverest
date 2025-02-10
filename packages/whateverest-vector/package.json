@@ -1,6 +1,6 @@
 {
   "name": "@joeyklee/whateverest-vector",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "main": "dist/whateverest-vector.js",
   "module": "dist/whateverest-vector.mjs",
   "type": "module",
