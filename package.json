@@ -1,7 +1,7 @@
 {
   "scripts": {
     "serve": "sirv",
-    "build": "yarn workspaces foreach -A run build"
+    "build": "npm run build --workspaces"
   },
   "keywords": [],
   "author": "joeyklee",
@@ -12,6 +12,7 @@
     ]
   },
   "devDependencies": {
+    "npm-check": "^6.0.1",
     "rimraf": "^6.0.1",
     "rollup": "^4.34.2",
     "sirv-cli": "^3.0.0"
@@ -19,5 +20,5 @@
   "dependencies": {
     "lerna": "^8.1.9"
   },
-  "packageManager": "yarn@4.6.0"
+  "packageManager": "npm@10.5.0"
 }
