@@ -28,6 +28,7 @@ npx lerna version
 
 ```sh
 npx lerna publish
+# npx lerna publish --force-publish
 ```
 
 ### Run the local server:
